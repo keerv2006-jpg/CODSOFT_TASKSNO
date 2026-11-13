@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; background: #f5f7ff; }
+
+header { background: #2b4a9e; color: white; text-align: center; padding: 40px 20px; }
+nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+
+section { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 10px; text-align: center; }
+h2 { color: #2b4a9e; margin-bottom: 15px; }
+
+.profile { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; }
+
+.skills { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.skills li { background: #5173ff; color: white; padding: 8px 16px; border-radius: 20px; }
+
+.cards { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+.card { background: #eef1ff; padding: 15px; border-radius: 8px; width: 250px; }
+
+.btn { background: #2b4a9e; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; }
+
+footer { text-align: center; padding: 20px; background: #2b4a9e; color: white; margin-top: 30px; }
+
+@media (max-width: 600px) { .card { width: 100%; } }

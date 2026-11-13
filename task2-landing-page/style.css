@@ -1,0 +1,162 @@
+/* Reset: remove the browser's default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Only 3 colors used:
+   Blue   #2b4a9e
+   Orange #ff7a30
+   Light  #eef1ff  */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HEADER */
+.header {
+  background: #2b4a9e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.menu a:hover {
+  color: #ff7a30;
+}
+
+/* HERO */
+.hero {
+  background: #2b4a9e;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* BUTTON (used in many places) */
+.btn {
+  display: inline-block;
+  background: #ff7a30;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #e2641c;
+}
+
+/* FEATURES */
+.features {
+  background: #eef1ff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.features h2,
+.pricing h2 {
+  color: #2b4a9e;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.feature-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.feature-box {
+  background: white;
+  width: 280px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.feature-box h3 {
+  color: #2b4a9e;
+  margin-bottom: 8px;
+}
+
+/* PRICING */
+.pricing {
+  text-align: center;
+  padding: 60px 20px;
+}
+.price-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.price-box {
+  background: #eef1ff;
+  width: 280px;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+.price-box h3 {
+  color: #2b4a9e;
+}
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.price-box ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.popular {
+  border: 3px solid #ff7a30;
+}
+
+/* FOOTER */
+.footer {
+  background: #2b4a9e;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+/* PHONE SCREENS */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu a {
+    margin: 0 8px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+}
