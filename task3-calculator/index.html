@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+
+    <!-- Display screen: shows the running calculation and the current number -->
+    <section class="screen" aria-live="polite">
+      <div class="history" id="history"></div>
+      <div class="display" id="display">0</div>
+    </section>
+
+    <!-- Keypad: laid out with CSS grid (4 columns) -->
+    <section class="keys">
+      <button class="key fn" data-action="clear">AC</button>
+      <button class="key fn" data-action="delete">DEL</button>
+      <button class="key fn" data-action="percent">%</button>
+      <button class="key op" data-action="operator" data-value="divide" aria-label="divide">&divide;</button>
+
+      <button class="key" data-action="digit" data-value="7">7</button>
+      <button class="key" data-action="digit" data-value="8">8</button>
+      <button class="key" data-action="digit" data-value="9">9</button>
+      <button class="key op" data-action="operator" data-value="multiply" aria-label="multiply">&times;</button>
+
+      <button class="key" data-action="digit" data-value="4">4</button>
+      <button class="key" data-action="digit" data-value="5">5</button>
+      <button class="key" data-action="digit" data-value="6">6</button>
+      <button class="key op" data-action="operator" data-value="subtract" aria-label="subtract">&minus;</button>
+
+      <button class="key" data-action="digit" data-value="1">1</button>
+      <button class="key" data-action="digit" data-value="2">2</button>
+      <button class="key" data-action="digit" data-value="3">3</button>
+      <button class="key op" data-action="operator" data-value="add" aria-label="add">+</button>
+
+      <button class="key fn" data-action="sign" aria-label="change sign">+/&minus;</button>
+      <button class="key" data-action="digit" data-value="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
